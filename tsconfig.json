@@ -1,0 +1,21 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+      "typeRoots": ["./node_modules/@types", "./src/types"],
+      "moduleResolution": "node",
+      "outDir": "./target/",
+      "target": "ESNext",
+      "module": "ESNext",
+      "allowSyntheticDefaultImports": true,
+      "preserveConstEnums": true,
+      "noImplicitReturns": true,
+      "resolveJsonModule": true,
+      "removeComments": true,
+      "noImplicitAny": true,
+      "alwaysStrict": true,
+      "sourceMap": true,
+      "allowJs": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
